@@ -1,0 +1,7 @@
+on boot
+#SPRD:add for uboot operation permission @{
+    wait /sys/block/mmcblk0boot0/force_ro 20
+    write /sys/block/mmcblk0boot0/force_ro 0
+    wait /sys/block/mmcblk0boot1/force_ro 20
+    write /sys/block/mmcblk0boot1/force_ro 0
+# @}

@@ -1,0 +1,2 @@
+add_lunch_combo omni_AH9910-eng
+add_lunch_combo omni_AH9910-userdebug
