@@ -44,6 +44,7 @@ jobs:
           sudo rm -f /usr/bin/python /usr/bin/python3.6 /usr/bin/python3.6m /usr/local/bin/python
           sudo ln -sf /usr/bin/python2.7 /usr/bin/python
           cd $GITHUB_WORKSPACE/twrp
+          export ALLOW_MISSING_DEPENDENCIES=true
           source build/envsetup.sh
           lunch omni_AH9910-eng
           mka -j$(nproc --all) recoveryimage
